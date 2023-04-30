@@ -1,2 +1,2 @@
 # Weather-App
-#A simple aand robust <h2>Live 🌡️Weather App🌡️</h2> created using React Js and API.
+<h2>A simple aand robust Live 🌡️Weather App🌡️ created using React Js and API.</h2>
