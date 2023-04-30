@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right top, #051937, #182543, #28324f, #37405b, #474e68);
+  height: 100vh;
+  overflow: hidden;
+}
+.mainContainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+   
+}
+.app
+{
+  background-image: url('./assets/cold-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.5s ease-out;
+  margin-top: 5%;
+  width: 20%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: rgb(109, 138, 170) 0px 20px 30px -10px;
+
+}
+.app.warm
+{
+  background-image: url('./assets/warm-bg.jpg');
+}
+main{
+  height: 80vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2),rgba(0,0,0,0.75));
+  padding: 25px;
+}
+.search-box
+{
+  width: 100%;
+  margin: 0 0 75px;
+}
+.search-box .search-bar
+{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  box-shadow:0px 5px rgba(0,0,0,0.2) ;
+  color: #313131;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+.search-box .search-bar:focus
+{
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+/* CSS when the app starts and show the static information */
+.weather-box .temp2 {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+/* Responsive */
+@media (min-width:1250px) and (max-width:1750px)
+{
+  /* Styles for screens between 1250px and 1750px wide */
+  .app{
+    width: 30%;
+    margin-top: 5%;
+  }
+}
+@media (min-width:1000px) and (max-width:1250px)
+{
+  /* Styles for screens between 1000px and 1250px wide */
+  .app{
+    width:40%;
+    margin-top: 5%;
+  }
+}
+@media (min-width:850px) and (max-width:1000px)
+{
+  /* Styles for screens between 850px and 1000px wide */
+  .app{
+    width:40%;
+    margin-top: 10%;
+  }
+}
+@media (min-width:550px) and (max-width:850px)
+{
+  /* Styles for screens between 550px and 850px wide */
+  .app{
+    width:70%;
+    margin-top: 10%;
+  }
+}
+@media (min-width:300px) and (max-width:550px)
+{
+  /* Styles for screens between 300px and 550px wide */
+  .app{
+    width:80%;
+    margin-top: 10%;
+  }
+}
