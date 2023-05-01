@@ -128,11 +128,11 @@ main{
 }
 
 /* Responsive */
-@media (min-width:1250px) and (max-width:1750px)
+@media (min-width:1250px) and (max-width:1850px)
 {
   /* Styles for screens between 1250px and 1750px wide */
   .app{
-    width: 30%;
+    width: 35%;
     margin-top: 5%;
   }
 }
@@ -140,7 +140,7 @@ main{
 {
   /* Styles for screens between 1000px and 1250px wide */
   .app{
-    width:40%;
+    width:45%;
     margin-top: 5%;
   }
 }
@@ -148,7 +148,7 @@ main{
 {
   /* Styles for screens between 850px and 1000px wide */
   .app{
-    width:40%;
+    width:65%;
     margin-top: 10%;
   }
 }
@@ -164,7 +164,8 @@ main{
 {
   /* Styles for screens between 300px and 550px wide */
   .app{
-    width:80%;
-    margin-top: 10%;
+    width:90%;
+    margin-top:10%;
   }
+
 }
