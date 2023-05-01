@@ -17,7 +17,7 @@ function App() {
     let month = months[d.getMonth()]; //d.getMonth returns a number between 0 and 11
     let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}` //returning a template string
+    return `${day}, ${date} ${month} ${year}` //returning a template string
   }
 
   const[Location,setLocation] =useState('');
@@ -50,9 +50,19 @@ function App() {
                     <input type="text" className='search-bar'onChange={(e)=>setLocation(e.target.value)} value={Location} onKeyPress={search} placeholder='Search..'/>
                 </div>
                 {(typeof weather.main!="undefined")?(
+                  // if part
                 <div className='location-box'>
                     <div className='location'>
                       {weather.name},{weather.sys.country}
+                      <br></br>
+                      <div>
+                        <h6>
+                            Lat:<strong>{weather.coord.lat}</strong>, 
+                            Long:<strong>{weather.coord.lon}</strong>
+                          </h6> 
+                      </div>
+                      
+
                     </div>
                     <div className='date'>
                       {dateBuilder(new Date())}  {/* js function defined above */}
@@ -60,11 +70,15 @@ function App() {
                     <div className="weather-box">
                       <div className="temp">
                         {Math.round(weather.main.temp)}°c
+                        <br></br>
+                        <h6>Feels Like: {Math.round(weather.main.feels_like)}°c</h6>
+                        <h6>Humidity: {Math.round(weather.main.humidity)}%</h6>
                       </div>
                       <div className="weather">{weather.weather[0].main}</div>
                     </div>
                 </div>
                 ):(
+                  // else part
                   <div className="weather-box text-center text-justify">
                   <div className="temp2">
                     <p className='h3'>
