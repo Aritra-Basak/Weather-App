@@ -19,14 +19,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
-  
-   
 }
 .app
 {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
-  background-position: bottom;
+  /* background-position: bottom; */
   transition: 0.5s ease-out;
   margin-top: 5%;
   width: 20%;
@@ -94,7 +92,7 @@ main{
 .weather-box .temp {
   position: relative;
   display: inline-block;
-  margin: 30px auto;
+  margin: 25px auto;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 15px 25px;
@@ -109,7 +107,7 @@ main{
 .weather-box .temp2 {
   position: relative;
   display: inline-block;
-  margin: 30px auto;
+  margin: 25px auto;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 15px 25px;
@@ -132,7 +130,7 @@ main{
 {
   /* Styles for screens between 1250px and 1750px wide */
   .app{
-    width: 35%;
+    width: 25%;
     margin-top: 5%;
   }
 }
@@ -166,6 +164,18 @@ main{
   .app{
     width:90%;
     margin-top:10%;
+  }
+  .weather-box .temp
+  {
+    margin: 10px auto;
+    font-size: 75px;
+
+  }
+  .weather-box .temp2
+  {
+    margin: 10px auto;
+    font-size: 75px;
+
   }
 
 }
